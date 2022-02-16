@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: None;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+h1,h2 {
+    font-weight: 300;
+    line-height: 1.2em;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* navbar */
+.navbar li :hover {
+    color: white;
+    border-radius: 5px;
+    border-bottom: 2px white solid;
+}
+
+.navbar a {
+    color: whitesmoke;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+.navbar { 
+    background-color: black;
+    color: whitesmoke;
+    height: 110px;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar .flex {
+    justify-content: space-between;
+}
+.navbar img {
+    height: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* showcase */
+.showcase {
+    height: 400px;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.showcase h1{
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
