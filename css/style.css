@@ -35,10 +35,9 @@ img {
 }
 
 /* navbar */
-.navbar li :hover {
-    color: white;
+.navbar li:not(.btn) :hover {
     border-radius: 5px;
-    border-bottom: 2px white solid;
+    border-bottom: 2px rgb(184, 184, 184) solid;
 }
 
 .navbar a {
@@ -62,6 +61,7 @@ img {
     height: 100px;
 }
 
+/* utilities */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -77,13 +77,48 @@ img {
     height: 100%;
 }
 
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+.btn-nav {
+    transition-duration: 0.4s;
+    background-color: transparent;
+    border: 2px grey solid;
+}
+
+.btn-nav:hover{
+    background-color: white;
+    border: 2px white solid;
+    color: black;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px whitesmoke solid;
+}
+
 /* showcase */
 .showcase {
-    height: 400px;
+    background-image: linear-gradient(to bottom, rgba(41, 44, 68, 0.52), rgba(12, 12, 12, 0.73)),url("https://rethinkraagamusic.com/wp-content/uploads/2022/01/orchestra-symphony-stage-2098877.jpg");
     background-color: black;
+    height: 350px;
     color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-}
+}  
 
 .showcase h1{
     font-size: 40px;
@@ -91,4 +126,19 @@ img {
 
 .showcase p {
     margin: 20px 0;
+}
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform: skewY(-2deg);
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
 }
