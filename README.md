@@ -1,2 +1,2 @@
 # RethinkRaga
- Sample Website for REthinkRaga
+ Sample Website for RethinkRaga
