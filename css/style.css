@@ -70,6 +70,10 @@ img {
 
 }
 
+.text-center {
+    text-align: center;
+}
+
 .flex {
     display: flex;
     justify-content: center;
@@ -104,6 +108,8 @@ img {
 }
 
 .btn-outline {
+    margin: auto;
+    width: auto;
     background-color: transparent;
     border: 1px whitesmoke solid;
 }
@@ -132,8 +138,8 @@ img {
 .showcase::after {
     content: '';
     position: absolute;
-    height: 100px;
-    bottom: -70px;
+    height: 70px;
+    bottom: -40px;
     right: 0;
     left: 0;
     background-color: rgb(255, 255, 255);
@@ -141,4 +147,33 @@ img {
     -webkit-transform: skewY(-2deg);
     -moz-transform: skewY(-2deg);
     -ms-transform: skewY(-2deg);
+}
+
+/* stats */
+.stats {
+    padding-top: 80px;
+}
+
+.grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.grid-3 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stats h2 {
+    font-size: 38px;
+
+.stats .grid h3 {
+    font-size: 35px;
+}
+
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
 }
