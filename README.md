@@ -1,2 +1,2 @@
 # RethinkRaga
- Sample Website for RethinkRaga
+ Sample landing page and enroll page for RethinkRaga
